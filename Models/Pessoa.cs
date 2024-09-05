@@ -7,7 +7,7 @@ public class Pessoa
     private int _idade;
     public string Nome
     {
-        get => _nome.ToUpper();
+        get => _nome;
 
         set
         {
@@ -19,6 +19,10 @@ public class Pessoa
             _nome = value;
         }
     }
+    
+    public string Sobrenome { get; set; }
+
+    public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 
     public int Idade
     {
@@ -37,6 +41,6 @@ public class Pessoa
 
     public void Apresentar()
     {
-        Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+        Console.WriteLine($"Nome: {NomeCompleto}, Idade: {Idade}");
     }
 }
