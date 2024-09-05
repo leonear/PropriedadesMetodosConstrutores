@@ -1,12 +1,7 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Leo";
-p1.Sobrenome = "Aparicio";
-
-Pessoa p2 = new Pessoa();
-p2.Nome = "Maria";
-p2.Sobrenome = "Maio";
+Pessoa p1 = new Pessoa("Leo", "Aparicio");
+Pessoa p2 = new Pessoa("Maria", "Maio");
 
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Ingles";
