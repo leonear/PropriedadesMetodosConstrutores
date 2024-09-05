@@ -21,4 +21,14 @@ public class Curso
         return Alunos.Remove(aluno);
       
     }
+
+    public void ListarAlunos()
+    {
+        Console.WriteLine($"Alunos do Curso de Inglês: {Nome}");
+        Console.WriteLine($"---------------------------------");
+        foreach (Pessoa aluno in Alunos)
+        {
+            Console.WriteLine(aluno.NomeCompleto);
+        }
+    }
 }
