@@ -15,4 +15,10 @@ public class Curso
         return Alunos.Count;
         
     }
+
+    public bool RemoverAluno(Pessoa aluno)
+    {
+        return Alunos.Remove(aluno);
+      
+    }
 }
