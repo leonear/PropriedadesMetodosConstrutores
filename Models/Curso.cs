@@ -24,7 +24,7 @@ public class Curso
 
     public void ListarAlunos()
     {
-        Console.WriteLine($"Alunos do Curso de Inglês: {Nome}");
+        Console.WriteLine($"Alunos do Curso de: {Nome}");
         Console.WriteLine($"---------------------------------");
         foreach (Pessoa aluno in Alunos)
         {
