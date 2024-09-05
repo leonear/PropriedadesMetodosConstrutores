@@ -26,9 +26,10 @@ public class Curso
     {
         Console.WriteLine($"Alunos do Curso de: {Nome}");
         Console.WriteLine($"---------------------------------");
-        foreach (Pessoa aluno in Alunos)
+        for (int count = 0; count < Alunos.Count; count++)
         {
-            Console.WriteLine(aluno.NomeCompleto);
+            string texto = "Número: " + count + " - " + Alunos[count].NomeCompleto;
+            Console.WriteLine(texto);
         }
     }
 }
