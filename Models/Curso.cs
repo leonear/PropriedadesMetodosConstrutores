@@ -9,4 +9,10 @@ public class Curso
     {
         Alunos.Add(aluno);
     }
+
+    public int ObterQuantidadeDeAlunosMatriculados()
+    {
+        return Alunos.Count;
+        
+    }
 }
