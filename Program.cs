@@ -1,13 +1,11 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 
 
-string numero1 = "10";
-int numero2 = 20;
 
-string resultado = numero1 + numero2;
 
-Console.WriteLine(resultado);
+decimal valorMonetario = 82.40M;
 
+Console.WriteLine($"{valorMonetario:C}");
 
 
 
@@ -22,10 +20,12 @@ Console.WriteLine(resultado);
 
 
 
-
-
-
-
+// string numero1 = "10";
+// int numero2 = 20;
+//
+// string resultado = numero1 + numero2;
+//
+// Console.WriteLine(resultado);
 
 
 
