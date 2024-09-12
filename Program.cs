@@ -3,26 +3,64 @@ using System.Globalization;
 
 
 
-Stack<int> pilha = new Stack<int>();
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-pilha.Push(2);
-pilha.Push(4);
-pilha.Push(8);
-pilha.Push(16);
+estados.Add("SP", "Sao Paulo");//o primeiro valor eh um ID e o segundo o valor em si
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
 
-foreach (int item in pilha)
+foreach (var item in estados)
 {
-    Console.WriteLine(item);    
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+Console.WriteLine("--------------------------------");
 
-pilha.Push(32);
+estados.Remove("BA");
+estados["SP"] = "Sao Paulo - Valor alterado";
 
-foreach (int item in pilha)
+foreach (var item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
+
+string chave = "BA";
+Console.WriteLine($"Verificando o elemento: {chave} ");
+
+
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine($"Valor Existente: {chave} ");
+}
+else
+{
+    Console.WriteLine($"Valor nao existe. E seguro adicionar a chave: {chave} ");
+}
+
+
+
+
+
+// Stack<int> pilha = new Stack<int>();
+//
+// pilha.Push(2);
+// pilha.Push(4);
+// pilha.Push(8);
+// pilha.Push(16);
+//
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);    
+// }
+//
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+//
+// pilha.Push(32);
+//
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
