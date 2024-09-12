@@ -13,13 +13,13 @@ public class Curso
     public int ObterQuantidadeDeAlunosMatriculados()
     {
         return Alunos.Count;
-        
+
     }
 
     public bool RemoverAluno(Pessoa aluno)
     {
         return Alunos.Remove(aluno);
-      
+
     }
 
     public void ListarAlunos()
@@ -28,7 +28,8 @@ public class Curso
         Console.WriteLine($"---------------------------------");
         for (int count = 0; count < Alunos.Count; count++)
         {
-            string texto = "Número: " + count + " - " + Alunos[count].NomeCompleto;
+            //string texto = "Número: " + count + " - " + Alunos[count].NomeCompleto;
+            string texto = $"Número: {count} - {Alunos[count].NomeCompleto}";
             Console.WriteLine(texto);
         }
     }
