@@ -11,9 +11,17 @@ try
     }
 
 }
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo nao encontrado. {ex.Message}");
+}
+catch (DirectoryNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. O caminho da Pasta nao foi encontrado. {ex.Message}");
+}
 catch (Exception ex)
 {
-    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+    Console.WriteLine($"Ocorreu uma excecao generica. {ex.Message}");
 }
 
 
