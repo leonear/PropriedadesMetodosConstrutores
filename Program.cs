@@ -3,40 +3,68 @@ using System.Globalization;
 
 
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+(int, string, string, decimal) tupla = (1, "Leonardo", "Aparicio", 1.80M);
 
-estados.Add("SP", "Sao Paulo");//o primeiro valor eh um ID e o segundo o valor em si
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
-
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-
-Console.WriteLine("--------------------------------");
-
-estados.Remove("BA");
-estados["SP"] = "Sao Paulo - Valor alterado";
-
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-
-string chave = "BA";
-Console.WriteLine($"Verificando o elemento: {chave} ");
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
 
 
-if (estados.ContainsKey(chave))
-{
-    Console.WriteLine($"Valor Existente: {chave} ");
-}
-else
-{
-    Console.WriteLine($"Valor nao existe. E seguro adicionar a chave: {chave} ");
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+//
+// estados.Add("SP", "Sao Paulo");//o primeiro valor eh um ID e o segundo o valor em si
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
+//
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+//
+// Console.WriteLine("--------------------------------");
+//
+// estados.Remove("BA");
+// estados["SP"] = "Sao Paulo - Valor alterado";
+//
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+//
+// string chave = "BA";
+// Console.WriteLine($"Verificando o elemento: {chave} ");
+//
+//
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor Existente: {chave} ");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor nao existe. E seguro adicionar a chave: {chave} ");
+// }
+//
 
 
 
