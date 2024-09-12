@@ -1,16 +1,48 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 
-Pessoa p1 = new Pessoa("Leo", "Aparicio");
-Pessoa p2 = new Pessoa("Maria", "Maio");
 
-Curso cursoDeIngles = new Curso();
-cursoDeIngles.Nome = "Ingles";
-cursoDeIngles.Alunos = new List<Pessoa>();
+string numero1 = "10";
+int numero2 = 20;
 
-cursoDeIngles.AdicionarAluno(p1);
-cursoDeIngles.AdicionarAluno(p2);
-cursoDeIngles.ListarAlunos();
+string resultado = numero1 + numero2;
 
+Console.WriteLine(resultado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Leo", "Aparicio");
+// Pessoa p2 = new Pessoa("Maria", "Maio");
+//
+// Curso cursoDeIngles = new Curso();
+// cursoDeIngles.Nome = "Ingles";
+// cursoDeIngles.Alunos = new List<Pessoa>();
+//
+// cursoDeIngles.AdicionarAluno(p1);
+// cursoDeIngles.AdicionarAluno(p2);
+// cursoDeIngles.ListarAlunos();
+//
 
 
 
