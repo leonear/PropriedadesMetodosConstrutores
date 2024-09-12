@@ -5,6 +5,12 @@ using System.Globalization;
 
 (int, string, string, decimal) tupla = (1, "Leonardo", "Aparicio", 1.80M);
 
+ValueTuple<int, string, string, decimal> tupla2 = (1, "Leonardo", "Aparicio", 1.80M);
+
+var tupla3 = Tuple.Create(1, "Leonardo", "Aparicio", 1.80M);
+
+
+
 Console.WriteLine($"Id: {tupla.Item1}");
 Console.WriteLine($"Nome: {tupla.Item2}");
 Console.WriteLine($"Sobrenome: {tupla.Item3}");
