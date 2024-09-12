@@ -1,28 +1,85 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 using System.Globalization;
 
-try
-{
-    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeeitura.txt");
 
-    foreach (string linha in linhas)
-    {
-        Console.WriteLine(linha);
-    }
 
-}
-catch (FileNotFoundException ex)
+Queue<int> fila = new Queue<int>();
+
+fila.Enqueue(1);
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(8);
+
+
+foreach (int item in fila)
 {
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo nao encontrado. {ex.Message}");
+    Console.WriteLine(item);
 }
-catch (DirectoryNotFoundException ex)
+
+
+Console.WriteLine($"Removendo Elementos: {fila.Dequeue()}");
+fila.Enqueue(16);
+
+foreach (int item in fila)
 {
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. O caminho da Pasta nao foi encontrado. {ex.Message}");
+    Console.WriteLine(item);
 }
-catch (Exception ex)
-{
-    Console.WriteLine($"Ocorreu uma excecao generica. {ex.Message}");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new ExemploExcecao().Metodo1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// try
+// {
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+//
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+//
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo nao encontrado. {ex.Message}");
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. O caminho da Pasta nao foi encontrado. {ex.Message}");
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma excecao generica. {ex.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("Chegou ate aqui!");
+// }
 
 
 
