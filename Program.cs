@@ -1,11 +1,22 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 using System.Globalization;
 
+try
+{
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeeitura.txt");
+
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+}
 
 
-DateTime date = DateTime.Now;
-
-Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
 
 
 
@@ -13,9 +24,9 @@ Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
 
 
 
-
-
-
+// DateTime date = DateTime.Now;
+//
+// Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
 
 
 
