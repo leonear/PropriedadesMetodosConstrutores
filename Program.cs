@@ -1,19 +1,37 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
 using System.Globalization;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");//nao indicado se o sistema for usados em diferentes paises
 
-decimal valorMonetario = 82.40M;
 
-Console.WriteLine($"{valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
+DateTime date = DateTime.Now;
 
-double porcentagem = .3412;
+Console.WriteLine(date.ToString("dd/MM/yyyy HH:mm"));
 
-Console.WriteLine(porcentagem.ToString("P"));
 
-int numero = 12345;
 
-Console.WriteLine(numero.ToString("##-##-##"));
+
+
+
+
+
+
+
+
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");//nao indicado se o sistema for usados em diferentes paises
+//
+// decimal valorMonetario = 82.40M;
+//
+// Console.WriteLine($"{valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
+//
+// double porcentagem = .3412;
+//
+// Console.WriteLine(porcentagem.ToString("P"));
+//
+// int numero = 12345;
+//
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
