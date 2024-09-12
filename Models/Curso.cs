@@ -29,7 +29,7 @@ public class Curso
         for (int count = 0; count < Alunos.Count; count++)
         {
             //string texto = "Número: " + count + " - " + Alunos[count].NomeCompleto;
-            string texto = $"Número: {count} - {Alunos[count].NomeCompleto}";
+            string texto = $"Número: {count + 1} - {Alunos[count].NomeCompleto}";
             Console.WriteLine(texto);
         }
     }
