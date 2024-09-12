@@ -1,7 +1,7 @@
 ﻿using PropriedadesMetodosConstrutores.Models;
+using System.Globalization;
 
-
-
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");//nao indicado se o sistema for usados em diferentes paises
 
 decimal valorMonetario = 82.40M;
 
